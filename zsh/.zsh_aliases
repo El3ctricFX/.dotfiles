@@ -1,0 +1,161 @@
+
+# ███████╗███████╗██╗  ██╗     █████╗ ██╗     ██╗ █████╗ ███████╗███████╗
+# ╚══███╔╝██╔════╝██║  ██║    ██╔══██╗██║     ██║██╔══██╗██╔════╝██╔════╝
+#   ███╔╝ ███████╗███████║    ███████║██║     ██║███████║███████╗███████╗
+#  ███╔╝  ╚════██║██╔══██║    ██╔══██║██║     ██║██╔══██║╚════██║╚════██║
+# ███████╗███████║██║  ██║    ██║  ██║███████╗██║██║  ██║███████║███████║
+# ╚══════╝╚══════╝╚═╝  ╚═╝    ╚═╝  ╚═╝╚══════╝╚═╝╚═╝  ╚═╝╚══════╝╚══════╝
+
+#╔════════════════════════════════════════════════════════╕
+#║		Convience Alias's			  │
+#╚════════════════════════════════════════════════════════╛
+
+#____________________________________________
+# ⥥ Ls replacement 
+#--------------------------------------------
+
+	alias ls='lsd'
+	alias ll='lsd -l'
+	alias lla='lsd -Alh'
+
+
+#____________________________________________
+# ⥥ Text Editor
+#--------------------------------------------
+
+	alias vi='nvim'
+	alias svi='sudo nvim'
+
+
+#____________________________________________
+# ⥥ Git Alias's 
+#--------------------------------------------
+
+	alias clone='git clone'
+
+
+#____________________________________________
+# ⥥ TUI Applications 
+#--------------------------------------------
+
+	alias todo='dooit' # Dooit Alias
+	alias journal='tjournal' # TUI Journal
+	alias music='musikcube' # Music player
+	alias bible='kjv' #TUI Bible
+
+#____________________________________________
+# ⥥ Navigation
+#--------------------------------------------
+
+	alias cd..='cd ..'
+	alias home='cd ~'
+	alias ..='cd ..'
+	alias ...='cd ../..'
+	alias cp='cp -i'
+	alias mv='mv -i'
+	alias rmd='rm -rf'
+
+
+
+	alias apprun='appimage-run'
+
+#╔════════════════════════════════════════════════════════╕
+#║		System alias's   			  │
+#╚════════════════════════════════════════════════════════╛
+
+	alias polkit='/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &' # Gnome Polkit
+
+#____________________________________________
+# ⥥ Shutdown Alias 
+#--------------------------------------------
+
+	alias shutnow='shutdown now'
+
+
+#____________________________________________
+# ⥥ Systemctl Alias's 
+#--------------------------------------------
+
+	alias systemctl='sudo systemctl'
+	alias sys-start='sudo systemctl start'
+	alias sys-stat='sudo systemctl check'
+
+
+#____________________________________________
+# ⥥ System Information 
+#--------------------------------------------
+
+	alias ipa='ip a'
+	alias ifconfig='ip a'
+	alias ipconfig='ip a'
+
+#____________________________________________
+# ⥥ Color Picker 
+#--------------------------------------------
+
+	alias color='hyprpicker'
+
+#____________________________________________
+# ⥥ Replace cd with Zoxide 
+#--------------------------------------------
+
+	alias cd='z'
+
+
+#____________________________________________
+# ⥥ USB Mounting 
+#--------------------------------------------
+
+	alias usbmount='jmtpfs ~/mountpoint'
+	alias usbremove='fusermount -u ~/mountpoint'
+
+#____________________________________________
+# ⥥ Update System 
+#--------------------------------------------
+
+	alias update='sudo nix-channel --update && sudo nixos-rebuild switch --upgrade && sudo flatpak update'
+	alias rebuild="sudo nixos-rebuild switch"
+
+#╔════════════════════════════════════════════════════════╕
+#║		Script Alias's       			  │
+#╚════════════════════════════════════════════════════════╛
+
+#____________________________________________
+# ⥥ Custom Folder Script 
+#--------------------------------------------
+	
+	alias cfolder='cp ~/Templates/custom_folders.sh .'
+	alias .cf='./custom_folders.sh'
+	alias cf='cfolder && .cf'
+
+#____________________________________________
+# ⥥ Verse Script 
+#--------------------------------------------
+	
+	alias rverse='cd ~/.scripts/verse && ./verse.sh && cd'
+	alias rverse-add='cd ~/.scripts/verse && ./verse.sh -a && cd ~'
+	alias rchapter='cd ~/.scripts/chapters && ./chapter.sh && cd'
+	alias rbible='cd ~/.scripts/verse && ./verse.sh && cd .. && cd chapters && ./chapter.sh && cd'
+
+
+#╔════════════════════════════════════════════════════════╕
+#║		Shortcuts       			  │
+#╚════════════════════════════════════════════════════════╛
+
+	alias bar='cd ~/.config/waybar'
+	alias website='cd ~/Documents/GitHub/website/'
+	alias note='cd ~/.daily && vi note.txt'
+	alias dailynote='cd ~/.daily && vi .dailynote'
+	alias .config='cd ~/.config/'
+	alias hyperconf='cd ~/.config/hypr/ && sudo nvim hyprland.conf'
+	alias nixconf='cd /etc/nixos/ && sudo nvim configuration.nix'
+
+#╔════════════════════════════════════════════════════════╕
+#║		Cool / Random Stuff       	          │
+#╚════════════════════════════════════════════════════════╛
+
+	alias neofetch='fastfetch'
+	alias fetch='fastfetch'
+	alias grep='grep --color=auto' # Defaul Bash Alias
+	alias zshrc='source ~/.zshrc' # Refresh / Display Zsh Configuration
+	alias reway='killall waybar && nohup waybar &' # Restarts waybar
