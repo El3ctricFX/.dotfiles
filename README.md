@@ -2,6 +2,8 @@
 
 a list of my configuration files,
 
+setup.sh - just something i made and hasn't been tested yet so probably has some flaw.
+
 
 s/o
 
