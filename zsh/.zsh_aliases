@@ -136,7 +136,7 @@
 	alias rverse-add='cd ~/.scripts/verse && ./verse.sh -a && cd ~'
 	alias rchapter='cd ~/.scripts/chapters && ./chapter.sh && cd'
 	alias rbible='cd ~/.scripts/verse && ./verse.sh && cd .. && cd chapters && ./chapter.sh && cd'
-
+        alias rbook='cd ~/.scripts/book && ./book.sh && cd'
 
 #╔════════════════════════════════════════════════════════╕
 #║		Shortcuts       			  │
