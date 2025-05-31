@@ -2,7 +2,16 @@
 
 a list of my configuration files,
 
-setup.sh - just something i made and hasn't been tested yet so probably has some flaw.
+**setup.sh** - just something i made and hasn't been tested yet so probably has some flaw. **(IT WILL DELETE ALL YOUR CURRENT CONFIGURATION FILES)**
+### Required Packages
+- dooit
+- fastfetch
+- hypr [ hyprland, hyprpaper, hyprlock ]
+- kitty
+- nvim
+- rofi
+- waybar
+- zsh
 
 
 s/o

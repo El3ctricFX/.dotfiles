@@ -115,6 +115,7 @@
 
 	alias update='sudo nix-channel --update && sudo nixos-rebuild switch --upgrade && sudo flatpak update'
 	alias rebuild="sudo nixos-rebuild switch"
+	alias "fpupdate-list"="flatpak remote-ls --updates"
 
 #╔════════════════════════════════════════════════════════╕
 #║		Script Alias's       			  │
@@ -137,6 +138,7 @@
 	alias rchapter='cd ~/.scripts/chapters && ./chapter.sh && cd'
 	alias rbible='cd ~/.scripts/verse && ./verse.sh && cd .. && cd chapters && ./chapter.sh && cd'
         alias rbook='cd ~/.scripts/book && ./book.sh && cd'
+	alias verselist='cd ~/.scripts/verse && nvim verselist.txt && cd'
 
 #╔════════════════════════════════════════════════════════╕
 #║		Shortcuts       			  │

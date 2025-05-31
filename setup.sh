@@ -1,16 +1,38 @@
-cd .config
+echo "THIS WILL DELETE ALL YOUR CURRENT CONFIGURATION FILES."
+read -p "Are you sure you want to continue? [y/N]: " confirm
 
-ln -s ~/.dotfiles/waybar .
-ln -s ~/.dotfiles/hypr .
-ln -s ~/.dotfiles/fastfetch .
-ln -s ~/.dotfiles/dooit .
-ln -s ~/.dotfiles/kitty .
-ln -s ~/.dotfiles/nvim .
-ln -s ~/.dotfiles/rofi .
-ln -s ~/.dotfiles/starship.toml .
+if [[ "$confirm" =~ ^[Yy]$ ]]; then
+    echo "Proceeding with setup..."
 
-cd
+    cd ~ || exit
 
-ln -s ~/.dotfiles/zsh/.zshrc .
-ln -s ~/.dotfiles/zsh/.zsh_aliases .
+    git clone https://github.com/El3ctricFX/.dotfiles.git
+
+    cd ~/.config || exit
+
+    rm -rf waybar && ln -s ~/.dotfiles/waybar .
+    rm -rf hypr && ln -s ~/.dotfiles/hypr .
+    rm -rf fastfetch && ln -s ~/.dotfiles/fastfetch .
+    rm -rf dooit && ln -s ~/.dotfiles/dooit .
+    rm -rf kitty && ln -s ~/.dotfiles/kitty .
+    rm -rf nvim && ln -s ~/.dotfiles/nvim .
+    rm -rf rofi && ln -s ~/.dotfiles/rofi .
+    rm -f starship.toml && ln -s ~/.dotfiles/starship.toml .
+
+    cd ~ || exit
+
+    rm -f .zshrc && ln -s ~/.dotfiles/zsh/.zshrc .
+    ln -s ~/.dotfiles/zsh/.zsh_aliases .
+
+    cd /etc/ || exit
+
+    sudo rm -rf nixos
+    sudo ln -s ~/.dotfiles/nixos .
+
+    echo "Setup complete."
+
+else
+    echo "Aborted."
+    exit 1
+fi
 
