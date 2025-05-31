@@ -224,6 +224,12 @@ programs.streamdeck-ui = {
     dysk
     librewolf
     simple-scan
+    hyprlandPlugins.hyprfocus
+    cmake
+    meson
+    cpio
+    nwg-panel
+
 
   #⌈ Themes
     gruvbox-dark-gtk

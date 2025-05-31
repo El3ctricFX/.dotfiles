@@ -13,6 +13,8 @@ a list of my configuration files,
 - waybar
 - zsh
 
+__**YOU WILL NEED TO INSTALL THESE MANUALLY BEFORE SETUP BECAUSE I USE NIXOS AND ITS ALL IN A CONFIG FILE**__
+
 
 s/o
 
