@@ -2,7 +2,7 @@
 
 a list of my configuration files,
 
-**setup.sh** - just something i made and hasn't been tested yet so probably has some flaw. **(IT WILL DELETE ALL YOUR CURRENT CONFIGURATION FILES)**
+**[setup.sh](https://raw.githubusercontent.com/El3ctricFX/.dotfiles/refs/heads/main/setup.sh)** - just something i made and has not been tested yet so probably has some flaw. **(IT WILL DELETE ALL YOUR CURRENT CONFIGURATION FILES)**
 ### Required Packages
 - dooit
 - fastfetch
