@@ -137,7 +137,13 @@ programs.streamdeck-ui = {
   services.flatpak.enable = true; # Enables flatpak
   nixpkgs.config.allowUnfree = true; # allows unfree software
   environment.systemPackages = with pkgs; [
-
+    hyprsunset
+    taskwarrior3
+    tldr
+    duf 
+    fd
+    bat
+    alacritty
     kitty 
     usbutils 
     jmtpfs

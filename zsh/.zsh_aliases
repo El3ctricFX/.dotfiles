@@ -147,7 +147,7 @@
 	alias bar='cd ~/.config/waybar'
 	alias website='cd ~/Documents/GitHub/website/'
 	alias note='cd ~/.daily && vi note.txt'
-	alias dailynote='cd ~/.daily && vi .dailynote'
+	alias dailynote='cd ~/.daily && cat .dailynote && cd'
 	alias .config='cd ~/.config/'
 	alias hyperconf='cd ~/.config/hypr/ && sudo nvim hyprland.conf'
 	alias nixconf='cd /etc/nixos/ && sudo nvim configuration.nix'
@@ -158,6 +158,8 @@
 
 	alias neofetch='fastfetch'
 	alias fetch='fastfetch'
-	alias grep='grep --color=auto' # Defaul Bash Alias
+	alias grep='grep --color=auto -in' # Defaul Bash Alias
+	alias cat='bat'
+	alias find='fd'
 	alias zshrc='source ~/.zshrc' # Refresh / Display Zsh Configuration
 	alias reway='killall waybar && nohup waybar &' # Restarts waybar
