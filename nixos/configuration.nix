@@ -65,6 +65,7 @@ programs.nm-applet.enable = true;
     videoDrivers = ["nvidia"];
   };
 
+
 #⌈ Enables Printing & Scanning & Bluetooth
 
   services.printing.enable = true;
@@ -137,8 +138,14 @@ programs.streamdeck-ui = {
   services.flatpak.enable = true; # Enables flatpak
   nixpkgs.config.allowUnfree = true; # allows unfree software
   environment.systemPackages = with pkgs; [
+    rofimoji
+    wget
+    discord    
+    discordo
     hyprsunset
+    yt-dlp
     taskwarrior3
+    httrack
     tldr
     duf 
     fd
@@ -193,7 +200,6 @@ programs.streamdeck-ui = {
     tor-browser
     onionshare-gui
     wireshark
-    vesktop
     gimp
     inkscape
     fontfor
@@ -207,7 +213,6 @@ programs.streamdeck-ui = {
     hyprpicker
     sherlock
     whois
-    webcord
     grim
     cmatrix
     dooit 
