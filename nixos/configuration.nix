@@ -140,6 +140,7 @@ programs.streamdeck-ui = {
   environment.systemPackages = with pkgs; [
     rofimoji
     wget
+    standardnotes
     discord    
     discordo
     hyprsunset
