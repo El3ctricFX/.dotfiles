@@ -137,22 +137,32 @@ programs.streamdeck-ui = {
   programs.steam.enable = true;
   services.flatpak.enable = true; # Enables flatpak
   nixpkgs.config.allowUnfree = true; # allows unfree software
+  nixpkgs.config.allowBroken = true;
   environment.systemPackages = with pkgs; [
     rofimoji
     wget
     standardnotes
-    discord    
-    discordo
+    mate.caja-with-extensions
+    discord   
+    unrar
     hyprsunset
     yt-dlp
     taskwarrior3
     httrack
     tldr
+    polybar
     duf 
     fd
     bat
     alacritty
-    kitty 
+    kitty
+    bluetui
+    obs-studio
+    brightnessctl
+    libnotify
+    #dunst
+    tui-journal
+    swaynotificationcenter
     usbutils 
     jmtpfs
     rofi-wayland 
@@ -185,7 +195,6 @@ programs.streamdeck-ui = {
     gnome-disk-utility
     killall
     networkmanagerapplet
-    vlc
     openrgb
     rnote
     bottles
@@ -216,7 +225,6 @@ programs.streamdeck-ui = {
     whois
     grim
     cmatrix
-    dooit 
     yazi 
     tui-journal 
     neovim
@@ -230,13 +238,14 @@ programs.streamdeck-ui = {
     nwg-displays
     hyprlock
     nwg-look
+    dooit
+    dooit-extras
     wlogout
     ntfs3g
     lazygit
     dysk
     librewolf
     simple-scan
-    hyprlandPlugins.hyprfocus
     cmake
     meson
     cpio
@@ -257,7 +266,6 @@ programs.streamdeck-ui = {
   	mplus-outline-fonts.githubRelease
   	dina-font
   	proggyfonts
-	nerdfonts
 	times-newer-roman
   ];
 
