@@ -141,27 +141,20 @@ programs.streamdeck-ui = {
   environment.systemPackages = with pkgs; [
     rofimoji
     wget
-    standardnotes
     mate.caja-with-extensions
     discord   
-    unrar
     hyprsunset
-    yt-dlp
     taskwarrior3
     httrack
     tldr
-    polybar
     duf 
     fd
     bat
-    alacritty
     kitty
     bluetui
     obs-studio
     brightnessctl
     libnotify
-    #dunst
-    tui-journal
     swaynotificationcenter
     usbutils 
     jmtpfs
@@ -169,13 +162,10 @@ programs.streamdeck-ui = {
     lsd
     zoxide
     git 
-    #waypaper
-    hyprshot 
     hyprpaper 
     btop
     grimblast
     fastfetch 
-    stow 
     starship 
     fzf 
     waybar
@@ -202,7 +192,6 @@ programs.streamdeck-ui = {
     ripgrep
     ungoogled-chromium
     lunar-client
-    #lukesmithxyz-bible-kjv
     hyprpolkitagent
     mediawriter
     lutris
@@ -228,7 +217,6 @@ programs.streamdeck-ui = {
     yazi 
     tui-journal 
     neovim
-    #lxappearance
     swappy
     slurp
     zsh-autosuggestions 
@@ -239,7 +227,6 @@ programs.streamdeck-ui = {
     hyprlock
     nwg-look
     dooit
-    dooit-extras
     wlogout
     ntfs3g
     lazygit
@@ -249,7 +236,6 @@ programs.streamdeck-ui = {
     cmake
     meson
     cpio
-    nwg-panel
 
 
   #⌈ Themes
