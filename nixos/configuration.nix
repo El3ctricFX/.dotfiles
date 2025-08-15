@@ -158,7 +158,7 @@ programs.streamdeck-ui = {
     swaynotificationcenter
     usbutils 
     jmtpfs
-    rofi-wayland 
+    rofi-wayland
     lsd
     zoxide
     git 
