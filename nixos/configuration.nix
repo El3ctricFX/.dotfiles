@@ -135,19 +135,21 @@ programs.streamdeck-ui = {
   security.polkit.enable = true;
 
   programs.steam.enable = true;
+  services.tumbler.enable = true;
   services.flatpak.enable = true; # Enables flatpak
   nixpkgs.config.allowUnfree = true; # allows unfree software
   nixpkgs.config.allowBroken = true;
   environment.systemPackages = with pkgs; [
     rofimoji
     wget
+    libopenraw
+    ffmpegthumbnailer
     mate.caja-with-extensions
-    discord   
     hyprsunset
-    taskwarrior3
+    gramps
     httrack
     tldr
-    duf 
+    duf
     fd
     bat
     kitty
@@ -186,8 +188,6 @@ programs.streamdeck-ui = {
     killall
     networkmanagerapplet
     openrgb
-    rnote
-    bottles
     wl-clipboard
     ripgrep
     ungoogled-chromium
@@ -226,7 +226,6 @@ programs.streamdeck-ui = {
     nwg-displays
     hyprlock
     nwg-look
-    dooit
     wlogout
     ntfs3g
     lazygit
@@ -240,9 +239,17 @@ programs.streamdeck-ui = {
 
   #⌈ Themes
     gruvbox-dark-gtk
+    everforest-gtk-theme
+    tokyonight-gtk-theme
+    nordic
+    juno-theme
+    arc-theme
+
   ];
 
   fonts.packages = with pkgs; [
+        font-awesome
+	noto-fonts-emoji
   	noto-fonts
   	noto-fonts-cjk-sans
   	noto-fonts-emoji

@@ -1,32 +1,80 @@
-# Inserts a blank line between shell prompts
+# Gruvbox Dark Brown Starship Theme
 add_newline = true
 
 format = """
-[┌╴\\(](bold #06CD94)[$username@$hostname](bold #06CD94)[\\)](bold #06CD94)\
-| $all[└─](#06CD94) $character\
+[┌╴\\(](bold #928374)[$username@$hostname](bold #928374)[\\)](bold #928374)\
+| $all[└─](#928374) $character\
 """
 
 [character]
-success_symbol = "💲"
+success_symbol = "󰅂"
 error_symbol = "✗"
 
 [username]
-style_user = 'blue bold'
-style_root = 'red bold'
+style_user = '#928374 bold'  # Gruvbox gray-brown
+style_root = '#7c6f64 bold'  # Gruvbox dark gray-brown
 format = '[$user]($style)'
 disabled = false
 show_always = true
 
 [hostname]
 ssh_only = false
-format = '[$ssh_symbol](bold blue)[$hostname](bold blue)'
+format = '[$ssh_symbol](bold #928374)[$hostname](bold #928374)'
 trim_at = '.companyname.com'
 disabled = false
 
-# No need for env variables as starship provides a way to show your current distro
+[directory]
+style = "bold #665c54"  # Gruvbox dark brown
+format = "[$path]($style)"
+
+# Explicitly disable all other modules to keep the prompt minimal
+[git_branch]
+disabled = true
+
+[git_status]
+disabled = true
+
 [os]
-style = "bold green"
-format = "on [$symbol$arch$name](style)"
+disabled = true
 
+[package]
+disabled = true
 
+[python]
+disabled = true
 
+[nodejs]
+disabled = true
+
+[golang]
+disabled = true
+
+[ruby]
+disabled = true
+
+[rust]
+disabled = true
+
+[time]
+disabled = true
+
+[cmd_duration]
+disabled = true
+
+[memory_usage]
+disabled = true
+
+[battery]
+disabled = true
+
+[aws]
+disabled = true
+
+[azure]
+disabled = true
+
+[gcloud]
+disabled = true
+
+[status]
+disabled = true

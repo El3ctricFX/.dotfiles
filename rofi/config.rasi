@@ -1,22 +1,23 @@
 configuration {
-	modi:                       "drun";
+    modi:                       "drun";
     show-icons:                 true;
     display-drun:               "::";
-	drun-display-format:        "{name}";
-	hover-select:				false;
-	me-select-entry:			"MousePrimary";
-	me-accept-entry:			"!MousePrimary";
-	font:						"JetBrains Mono Semibold 11";
+    drun-display-format:        "{name}";
+    hover-select:               false;
+    me-select-entry:            "MousePrimary";
+    me-accept-entry:            "!MousePrimary";
+    font:                       "JetBrains Mono Semibold 11";
 }
 
 * {
-  background:             rgba(29, 32, 33, 0.9);
-  background-selected:    #48554D;
-  selected:               #504945;
-  selected-border:        #665C54;
-  text:                   #77FF5E;
-  subtext:                #ACD3A5;
+  background:             rgba(40, 40, 40, 0.9);   /* Gruvbox bg */
+  background-selected:    #3c3836;                 /* Darker bg for selection */
+  selected:               #504945;                 /* Alt bg highlight */
+  selected-border:        #665c54;                 /* Border highlight */
+  text:                   #ebdbb2;                 /* Normal fg */
+  subtext:                #bdae93;                 /* Muted fg */
 }
+
 
 window {
     transparency:                "real";
