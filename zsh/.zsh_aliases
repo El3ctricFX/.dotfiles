@@ -38,6 +38,7 @@
 # ⥥ TUI Applications 
 #--------------------------------------------
 
+	alias todo='dooit' # Dooit Alias
 	alias journal='tjournal' # TUI Journal
 	alias music='musikcube' # Music player
 	alias bible='kjv' #TUI Bible
